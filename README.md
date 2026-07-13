@@ -11,42 +11,43 @@ Nahuel López Pérez
 
 
 ## **Enlace a la Wiki del Proyecto (Propuesta Detallada):**
-## Ver la Propuesta Completa del Proyecto aquí (https://github.com/lopezPerezNahuel/proyecto-final-tp/wiki)
+### Ver la Propuesta Completa del Proyecto aquí (https://github.com/lopezPerezNahuel/proyecto-final-tp/wiki)
 
 
 
-Cómo Compilar y Ejecutar el proyecto
+# Cómo Compilar y Ejecutar el proyecto
 
-# Pasos:
+## Pasos:
 
 
 
-Clonar el repositorio:
+## 1. Clonar el repositorio:
 
 git clone (https://github.com/lopezPerezNahuel/proyecto-final-tp)
 cd proyecto-final-tp
 
 
 
-Compilar el proyecto con el wrapper de Gradle incluido en LibGDX:
+## 2. Compilar el proyecto con el wrapper de Gradle incluido en LibGDX:
 
-# Windows:
+### Windows:
 
 ./gradlew.bat build
 
 
-# Linux / macOS:
+### Linux / macOS:
+
 gradlew.bat build
 
 
 
-3. Ejecutar el juego en escritorio:
+## 3. Ejecutar el juego en escritorio:
 
-# Windows:
+### Windows:
 
 gradlew.bat desktop:run
 
 
-# Linux / macOS:
+### Linux / macOS:
 
 ./gradlew desktop:run
