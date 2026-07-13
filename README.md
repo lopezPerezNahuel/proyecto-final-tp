@@ -1,33 +1,47 @@
 # El Archivo del Infinito
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+#Integrantes del Grupo
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+Nahuel López Pérez
 
-## Platforms
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
 
-## Gradle
 
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
+"El Archivo del Infinito" es un videojuego de género roguelike en dos dimensiones con perspectiva cenital (top-down). El jugador asume el rol de un bibliotecario nocturno que descubre que, durante su jornada, una de las estanterías del establecimiento funciona como puerta de acceso a un entorno hostil y misterioso. La experiencia se estructura en torno a un ciclo de riesgo y recompensa: el jugador debe explorar, recuperar libros perdidos y combatir anomalías bajo la presión de un límite de tiempo, el amanecer, donde debe volver a su puesto de trabajo antes de que su jefe lo encuentre fuera de este. El progreso permanente del jugador libros recuperados, mejoras desbloqueadas y estadísticas— se conserva entre incursiones mediante una base de datos local.
 
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
 
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+Cómo Compilar y Ejecutar el proyecto
+
+#Pasos:
+
+
+
+Clonar el repositorio:
+
+git clone (https://github.com/lopezPerezNahuel/proyecto-final-tp)
+cd proyecto-final-tp
+
+
+
+Compilar el proyecto con el wrapper de Gradle incluido en LibGDX:
+
+#Windows:
+
+./gradlew.bat build
+
+
+#Linux / macOS:
+gradlew.bat build
+
+
+
+3. Ejecutar el juego en escritorio:
+
+#Windows:
+
+gradlew.bat desktop:run
+
+
+#Linux / macOS:
+
+./gradlew desktop:run
