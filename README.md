@@ -1,6 +1,6 @@
 # El Archivo del Infinito
 
-# Integrantes del Grupo
+# Desarrollador
 
 Nahuel López Pérez
 
@@ -11,10 +11,21 @@ Nahuel López Pérez
 
 ## Tecnologías principales
 
-- Framework: gdx-liftoff 1.14.2.1 diseñado para ejecutarse en computadoras (Windows, macOS o Linux)
+- Versión de java: 17
+- Framework LibGDX 1.14.2
+- Herramienta de configuración: gdx-liftoff 1.14.2.1
+- Plataforma de desarrollo de objetivo: Escritorio mediante LWJGL3
+- SQLite: Tecnología planifica
   
-## **Enlace a la Wiki del Proyecto (Propuesta Detallada):**
-### Ver la Propuesta Completa del Proyecto aquí (https://github.com/lopezPerezNahuel/proyecto-final-tp/wiki)
+## **Enlace a la Wiki del Proyecto Propuesta Detallada:**
+### Ver la propuesta completa del proyecto [Aquí](https://github.com/lopezPerezNahuel/proyecto-final-tp/wiki)
+
+# Requisitos Previos
+
+Para compilar y ejecutar este proyecto, asegúrese de tener instalado lo siguiente en su sistema:
+
+- JDK (Java Development Kit): Debe instalado el JDK 17 o una versión superior compatible
+- GIT: Para poder clonar el repositorio
 
 
 
@@ -26,32 +37,33 @@ Nahuel López Pérez
 
 ## 1. Clonar el repositorio:
 
-git clone (https://github.com/lopezPerezNahuel/proyecto-final-tp)
-
+``` bash
+git clone https://github.com/lopezPerezNahuel/proyecto-final-tp
 cd proyecto-final-tp
-
+```
 
 
 ## 2. Compilar el proyecto con el wrapper de Gradle incluido en LibGDX:
 
 ### Windows:
-
-./gradlew.bat build
-
+``` bash
+- gradlew.bat build
+```
 
 ### Linux / macOS:
-
-gradlew.bat build
-
+``` bash
+- ./gradlew build
+```
 
 
 ## 3. Ejecutar el juego en escritorio:
 
 ### Windows:
-
-gradlew.bat desktop:run
-
+``` bash
+- gradlew.bat lwjgl3:run
+```
 
 ### Linux / macOS:
-
-./gradlew desktop:run
+``` bash
+- ./gradlew lwjgl3:run
+```
