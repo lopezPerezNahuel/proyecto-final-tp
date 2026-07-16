@@ -15,7 +15,8 @@ Nahuel López Pérez
 - Framework LibGDX 1.14.2
 - Herramienta de configuración: gdx-liftoff 1.14.2.1
 - Plataforma de desarrollo de objetivo: Escritorio mediante LWJGL3
-- SQLite: Tecnología planificada
+- Base de datos: Tecnología planificada
+- Sistema de compilación: Gradle
   
 ## **Enlace a la Wiki del Proyecto Propuesta Detallada:**
 ### Ver la propuesta completa del proyecto [Aquí](https://github.com/lopezPerezNahuel/proyecto-final-tp/wiki)
