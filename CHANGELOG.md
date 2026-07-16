@@ -1,6 +1,6 @@
 # Chancelog
 
-All notable changes to this project will be documented in this file.
+Todos los cambios notables dentro de este proyecto serán documentados en este archivo
 
 
 ## [0.1.0] - 2026-07-14
