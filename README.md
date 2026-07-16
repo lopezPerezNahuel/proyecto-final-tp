@@ -15,7 +15,7 @@ Nahuel López Pérez
 - Framework LibGDX 1.14.2
 - Herramienta de configuración: gdx-liftoff 1.14.2.1
 - Plataforma de desarrollo de objetivo: Escritorio mediante LWJGL3
-- SQLite: Tecnología planifica
+- SQLite: Tecnología planificada
   
 ## **Enlace a la Wiki del Proyecto Propuesta Detallada:**
 ### Ver la propuesta completa del proyecto [Aquí](https://github.com/lopezPerezNahuel/proyecto-final-tp/wiki)
@@ -47,12 +47,12 @@ cd proyecto-final-tp
 
 ### Windows:
 ``` bash
-- gradlew.bat build
+gradlew.bat build
 ```
 
 ### Linux / macOS:
 ``` bash
-- ./gradlew build
+./gradlew build
 ```
 
 
@@ -60,10 +60,10 @@ cd proyecto-final-tp
 
 ### Windows:
 ``` bash
-- gradlew.bat lwjgl3:run
+gradlew.bat lwjgl3:run
 ```
 
 ### Linux / macOS:
 ``` bash
-- ./gradlew lwjgl3:run
+./gradlew lwjgl3:run
 ```
