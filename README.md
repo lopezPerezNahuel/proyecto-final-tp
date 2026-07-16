@@ -38,10 +38,11 @@ Para compilar y ejecutar este proyecto, asegúrese de tener instalado lo siguien
 
 ## 1. Clonar el repositorio:
 
-``` bash
+``` 
 git clone https://github.com/lopezPerezNahuel/proyecto-final-tp
-cd proyecto-final-tp
 ```
+cd proyecto-final-tp
+
 
 
 ## 2. Compilar el proyecto con el wrapper de Gradle incluido en LibGDX:
