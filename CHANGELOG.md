@@ -1,4 +1,4 @@
-# Chancelog
+# Changelog
 
 Todos los cambios notables dentro de este proyecto serán documentados en este archivo
 
