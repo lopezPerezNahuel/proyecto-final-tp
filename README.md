@@ -41,19 +41,20 @@ Para compilar y ejecutar este proyecto, asegúrese de tener instalado lo siguien
 ``` 
 git clone https://github.com/lopezPerezNahuel/proyecto-final-tp
 ```
+```
 cd proyecto-final-tp
-
+```
 
 
 ## 2. Compilar el proyecto con el wrapper de Gradle incluido en LibGDX:
 
 ### Windows:
-``` bash
+``` 
 gradlew.bat build
 ```
 
 ### Linux / macOS:
-``` bash
+``` 
 ./gradlew build
 ```
 
@@ -61,11 +62,11 @@ gradlew.bat build
 ## 3. Ejecutar el juego en escritorio:
 
 ### Windows:
-``` bash
+``` 
 gradlew.bat lwjgl3:run
 ```
 
 ### Linux / macOS:
-``` bash
+``` 
 ./gradlew lwjgl3:run
 ```
