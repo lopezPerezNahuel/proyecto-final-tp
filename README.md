@@ -11,7 +11,7 @@ Nahuel López Pérez
 
 ## Tecnologías principales
 
-- Versión de java: 17
+- Versión de java: 21
 - Framework LibGDX 1.14.2
 - Herramienta de configuración: gdx-liftoff 1.14.2.1
 - Plataforma de desarrollo de objetivo: Escritorio mediante LWJGL3
@@ -25,7 +25,7 @@ Nahuel López Pérez
 
 Para compilar y ejecutar este proyecto, asegúrese de tener instalado lo siguiente en su sistema:
 
-- JDK (Java Development Kit): Debe instalado el JDK 17 o una versión superior compatible
+- JDK (Java Development Kit): Debe instalado el JDK 21
 - GIT: Para poder clonar el repositorio
 
 
