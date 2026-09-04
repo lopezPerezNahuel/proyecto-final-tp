@@ -6,14 +6,14 @@ import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mijuego.MainGame;
 import logica.ControladorVirtual;
-import logica.EntradaAuto;
+import logica.Entrada;
 
 public class PantallaAuto extends PantallaBase{
 
     private SpriteBatch batch;
     private Auto auto;
     private ControladorVirtual controlador;
-    private EntradaAuto entradaAuto;
+    private Entrada entradaAuto;
 
 
 
@@ -31,7 +31,7 @@ public class PantallaAuto extends PantallaBase{
         auto.setPosition(40,40);
 
         controlador = new ControladorVirtual();
-        entradaAuto = new EntradaAuto(controlador);
+        entradaAuto = new Entrada(controlador);
         Gdx.input.setInputProcessor(entradaAuto);
 
     }
@@ -45,8 +45,7 @@ public class PantallaAuto extends PantallaBase{
 
         if (controlador.moverDerecha){
         auto.entradaTeclado();
-        }
-       else if (controlador.moverIzquierda){
+        } else if (controlador.moverIzquierda){
             auto.entradaTeclado();
             }
 

@@ -18,7 +18,7 @@ public class MainGame extends Game {
     @Override
     public void create() {
        batch = new SpriteBatch();
-       animacion = new PantallaAnimacion(this);
+        animacion = new PantallaAnimacion(this);
        setScreen(animacion);
     }
 

@@ -2,13 +2,12 @@ package logica;
 
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputAdapter;
-import com.badlogic.gdx.InputProcessor;
 
-public class EntradaAuto extends InputAdapter {
+public class Entrada extends InputAdapter {
 
     ControladorVirtual controlador;
 
-    public EntradaAuto(ControladorVirtual controlador) {
+    public Entrada(ControladorVirtual controlador) {
         this.controlador = controlador;
     }
 
@@ -27,10 +26,24 @@ public class EntradaAuto extends InputAdapter {
                     controlador.moverDerecha = true;
                     return true;
                 }
+            case Input.Keys.UP:
+            case Input.Keys.W:
+                if(!controlador.moverAbajo){
+                    controlador.moverArriba = true;
+                    return true;
+                }
+            case Input.Keys.DOWN:
+            case Input.Keys.S:
+                if(!controlador.moverArriba){
+                    controlador.moverAbajo = true;
+                    return true;
+                }
             default:
                 return false;
         }
     }
+
+    /*
     @Override
     public boolean keyUp(int keycode) {
         switch (keycode){
@@ -46,7 +59,7 @@ public class EntradaAuto extends InputAdapter {
                 return false;
         }
     }
-
+*/
 
 }
 
