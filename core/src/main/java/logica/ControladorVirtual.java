@@ -1,5 +1,7 @@
 package logica;
 
+import javax.naming.ldap.Control;
+
 public class ControladorVirtual {
 
     public boolean moverIzquierda;

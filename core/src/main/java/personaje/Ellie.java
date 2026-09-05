@@ -6,8 +6,18 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import logica.ControladorVirtual;
+import logica.Entrada;
 
 public class Ellie extends Sprite {
+    private Animation<TextureRegion> animacion;
+    private float tiempoEstado;
+    private ControladorVirtual controlador;
+
+
+
+
+
 
     private static final int ANCHO_CUADRO = 21;
     private static final int ALTO_CUADRO = 32;
@@ -15,19 +25,19 @@ public class Ellie extends Sprite {
     private static final int ANCHO_ELLIE = ANCHO_CUADRO * 2;
     private static final float VELOCIDAD = 150f;
 
-    private Animation<TextureRegion> animacion;
-    private float tiempoEstado;
 
-    public Ellie(float x, float y) {
+
+    public Ellie(float x, float y, ControladorVirtual controlador) {
         super();
+        this.controlador = controlador;
         tiempoEstado = 0f;
 
 
         Texture spriteSheet = new Texture("SpriteEllie.png");
         TextureRegion[][] temp = TextureRegion.split(spriteSheet, ANCHO_CUADRO, ALTO_CUADRO);
-        TextureRegion[] ellieFrames = new TextureRegion[6];
+        TextureRegion[] ellieFrames = new TextureRegion[5];
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             ellieFrames[i] = temp[0][i];
         }
 
@@ -38,8 +48,17 @@ public class Ellie extends Sprite {
     }
 
     public void actualizar(float delta) {
-        tiempoEstado += delta;
+        boolean seEstaMoviendo = controlador.moverIzquierda ||
+            controlador.moverDerecha ||
+            controlador.moverArriba ||
+            controlador.moverAbajo;
+        if (seEstaMoviendo){
+            tiempoEstado += delta;
+        }else {
+            tiempoEstado = 0;
+        }
         setRegion(animacion.getKeyFrame(tiempoEstado, true));
+
     }
 
     public void entradaTeclado() {
@@ -52,15 +71,20 @@ public class Ellie extends Sprite {
         float x = getX();
         float y = getY();
 
-        if (izquierda && !derecha) {
+
+        if (controlador.moverIzquierda && !controlador.moverDerecha) {
             x -= VELOCIDAD * delta;
-        } else if (derecha && !izquierda) {
+        } else if (controlador.moverDerecha && !controlador.moverIzquierda) {
             x += VELOCIDAD * delta;
-        } else if (abajo && !arriba) {
-            y -= VELOCIDAD * delta;
-        } else if (arriba && !abajo) {
-            y += VELOCIDAD * delta;
         }
+
+// Movimiento Vertical (Eje Y) - ¡SEPARADO DEL HORIZONTAL!
+        if (controlador.moverArriba && !controlador.moverAbajo) {
+            y += VELOCIDAD * delta;
+        } else if (controlador.moverAbajo && !controlador.moverArriba) {
+            y -= VELOCIDAD * delta;
+        }
+
         actualizarPoscicion(x, y);
     }
     private void actualizarPoscicion(float x, float y){

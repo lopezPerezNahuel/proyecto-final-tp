@@ -29,6 +29,9 @@ public class MainGame extends Game {
     @Override
     public void dispose(){
         super.dispose();
+        if ( batch != null){
+            batch.dispose();
+        }
     }
 
 }
