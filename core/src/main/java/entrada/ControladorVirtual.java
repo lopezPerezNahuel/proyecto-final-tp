@@ -1,6 +1,4 @@
-package logica;
-
-import javax.naming.ldap.Control;
+package entrada;
 
 public class ControladorVirtual {
 

@@ -1,4 +1,4 @@
-package logica;
+package entrada;
 
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputAdapter;
