@@ -7,8 +7,6 @@ import pantallas.*;
 
 public class MainGame extends Game {
     private SpriteBatch batch;
-    public PantallaBase uno;
-    public PantallaBase dos;
     public PantallaAnimacion animacion;
 
     @Override
